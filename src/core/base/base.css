@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-neutral-charcoal bg-neutral-cream antialiased transition-colors duration-300;
+  }
+
+  /* Dark mode overrides for body */
+  .dark body {
+    @apply bg-neutral-charcoal text-neutral-cream;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold text-primary;
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    @apply text-secondary;
+  }
+}
+
+/* Custom Utility for JS hooks (not for styling) */
+.js-toggle-btn {
+  /* No styles, just a hook */
+}

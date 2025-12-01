@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Evergreen Retreat | Rustic Luxury Vacation</title>
+    <meta name="description" content="Experience rustic luxury at A Evergreen Retreat. Your basecamp for epic journeys in nature.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-neutral-cream text-neutral-charcoal dark:bg-neutral-charcoal dark:text-neutral-cream transition-colors duration-300">
+    
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 transition-all duration-300 bg-white/90 dark:bg-neutral-charcoal/90 backdrop-blur-md border-b border-neutral-charcoal/5 dark:border-neutral-cream/5">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-serif font-bold tracking-tighter text-primary dark:text-secondary">EVERGREEN</a>
+        
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#hero" class="text-sm uppercase tracking-widest hover:text-secondary transition-colors">Home</a>
+          <a href="#showcase" class="text-sm uppercase tracking-widest hover:text-secondary transition-colors">Gallery</a>
+          <a href="#amenities" class="text-sm uppercase tracking-widest hover:text-secondary transition-colors">Amenities</a>
+          <a href="#booking" class="text-sm uppercase tracking-widest hover:text-secondary transition-colors">Book</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <button id="theme-toggle" class="p-2 rounded-full hover:bg-neutral-charcoal/5 dark:hover:bg-neutral-cream/5 transition-colors" aria-label="Toggle Dark Mode">
+            <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            <svg class="w-5 h-5 hidden dark:block text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          </button>
+          
+          <button class="md:hidden p-2" aria-label="Menu">
+             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1518182170546-0766ba6f6a56?auto=format&fit=crop&q=80&w=2000" alt="Cabin in the woods" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center text-white">
+          <span class="block text-secondary uppercase tracking-[0.3em] mb-4 text-sm md:text-base animate-fade-in-up">Welcome to</span>
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight animate-fade-in-up delay-100">
+            A Evergreen<br/><span class="text-neutral-cream italic font-light">Retreat</span>
+          </h1>
+          <p class="max-w-2xl mx-auto text-lg md:text-xl text-neutral-cream/90 mb-12 font-light leading-relaxed animate-fade-in-up delay-200">
+            Disconnect from the noise and reconnect with nature in our rustic luxury sanctuary.
+          </p>
+          <div class="js-hero-cta animate-fade-in-up delay-300">
+            <!-- Button injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Showcase / Gallery -->
+      <section id="showcase" class="py-24 bg-white dark:bg-neutral-charcoal">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-serif mb-4 text-primary dark:text-secondary">The Experience</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto"></div>
+          </div>
+          
+          <div id="gallery-grid" class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+            <!-- Images injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Amenities -->
+      <section id="amenities" class="py-24 bg-neutral-cream dark:bg-neutral-charcoal/95">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 class="text-3xl md:text-5xl font-serif mb-8 text-primary dark:text-secondary">Curated Comforts</h2>
+              <p class="text-lg text-neutral-charcoal/80 dark:text-neutral-cream/80 mb-12 leading-relaxed">
+                Every detail at A Evergreen Retreat is designed to provide the perfect balance of rustic charm and modern luxury.
+              </p>
+              <ul id="amenities-list" class="grid grid-cols-1 gap-4">
+                <!-- Amenities injected by JS -->
+              </ul>
+            </div>
+            <div class="relative h-[600px] hidden lg:block">
+              <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&q=80&w=1000" alt="Interior detail" class="w-full h-full object-cover shadow-2xl">
+              <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-secondary/10 -z-10"></div>
+              <div class="absolute -top-8 -right-8 w-64 h-64 bg-primary/10 -z-10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Section -->
+      <section id="booking" class="py-24 bg-white dark:bg-neutral-charcoal relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+          <div id="booking-container" class="max-w-5xl mx-auto">
+            <!-- Booking Form injected by JS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-neutral-cream py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10 pb-12">
+          <div>
+            <span class="text-2xl font-serif font-bold tracking-tighter mb-6 block">EVERGREEN</span>
+            <p class="opacity-60 leading-relaxed">
+              Your escape from the ordinary. <br>
+              Nestled in the heart of the wilderness.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-serif mb-6 text-secondary">Contact</h4>
+            <ul class="space-y-4 opacity-60">
+              <li>hello@evergreenretreat.com</li>
+              <li>+1 (555) 123-4567</li>
+              <li>123 Forest Lane, Wilderness, CA</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-serif mb-6 text-secondary">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-secondary transition-colors">Instagram</a>
+              <a href="#" class="hover:text-secondary transition-colors">Facebook</a>
+              <a href="#" class="hover:text-secondary transition-colors">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-12 text-center opacity-40 text-sm">
+          &copy; 2024 A Evergreen Retreat. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div id="fullscreen-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="relative w-full h-full p-4 flex items-center justify-center">
+        <img id="fullscreen-image" src="" alt="Full-screen image" class="max-w-full max-h-full object-contain">
+        <button id="modal-close" class="absolute top-4 right-4 text-white text-4xl font-bold">&times;</button>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
